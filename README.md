@@ -1,8 +1,7 @@
 # Mobile Automation # 2
 Установка зависимостей  
 pip install -r requirements.txt  
-Реализованы автотесты:   
-в эмуляторе "Android Studio", на реальном устройстве, в "Browserstack"    
+Реализованы автотесты: в эмуляторе "Android Studio", на реальном устройстве, в "Browserstack"    
 
 _Важно!_   
 Перед запуском автотестов необходимо:
