@@ -8,7 +8,7 @@ dotenv.load_dotenv()
 
 
 class Config(pydantic_settings.BaseSettings):
-    context: Literal['local_emulator', 'local_real', 'bstack'] = 'local_emulator'  # по дефолту запускает на эмуляторе
+    context: Literal['local_emulator', 'local_real', 'bstack'] = 'bstack'  # по дефолту запускает на bstack
 
     # Общие параметры
     deviceName: str = 'Pixel'
@@ -26,7 +26,7 @@ class Config(pydantic_settings.BaseSettings):
 
     # Настройка загрузки переменных окружения
     model_config = pydantic_settings.SettingsConfigDict(
-        env_file=('.env', f'.env.{os.getenv("CONTEXT", "local_emulator")}')
+        env_file=('.env', f'.env.{os.getenv("CONTEXT", "bstack")}')
     )
 
     # Создаем экземпляр конфига
