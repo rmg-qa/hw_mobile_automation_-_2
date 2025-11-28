@@ -10,12 +10,7 @@ _Важно!_
 3) Создать файл .env и положить его в корень проекта
 
 
-Структура файла .env выглядит так:  
-BROWSERSTACK_USERNAME=<Ваш USER_ID в Browserstack>  
-BROWSERSTACK_ACCESS_KEY=<Ваш Accesskey в Browserstack>  
-BROWSERSTACK_PROJECT_NAME=<Необязательный параметр>  
-BROWSERSTACK_BUILD_NAME=<Необязательный параметр>  
-BROWSERSTACK_SESSION_NAME=<Необязательный параметр>  
+Структуру файла .env смотри в .env.example
 
 Запуск автотестов в Browserstack на Windows:  
 $env:CONTEXT="bstack"; pytest <Ваш путь до тестов>  
